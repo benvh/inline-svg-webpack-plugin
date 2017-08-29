@@ -1,8 +1,9 @@
 # Inline Svg Webpack Plugin
 
-A webpack plugin to replace &lt;img&gt; elements that have an image/svg+xml data url, with their actual svg tags.
+A webpack plugin to replace &lt;img&gt; elements that have an image/svg+xml data url, with their actual svg tags in the emitted assets of your choice. 
 
-Combine this with other loaders to make it useful. Check [html-loader's readme](https://github.com/webpack-contrib/html-loader#export-into-html-files) for more on that.
+
+Combine this with other loaders (the ones that can emit files) to make it useful. Check [html-loader's readme](https://github.com/webpack-contrib/html-loader#export-into-html-files) for more on that.
 
 ## Dependencies
 * [NMF last-call-webpack-plugin](https://github.com/NMFR/last-call-webpack-plugin)
@@ -21,14 +22,14 @@ $ npm install --save-dev inline-svg-webpack-plugin url-loader
 
 #### update your webpack&#46;config&#46;js
 You can use url-loader to inline your svg files as data-urls so the plugin can pick up on them.
-Make sure you set url-loader's limit option high enough so that all svg images get inlined as data-urls.
+Make sure you set url-loader's limit option high enough so that all svg images get inlined as data-urls (i guess this is optional).
 
 And don't forget to add the plugin!
  
  ```js
 'use strict'
 
-var InlineSvgPlugin   = require('inline-svg-webpack-plugin');
+var InlineSvgPlugin = require('inline-svg-webpack-plugin');
 
 module.exports {
     // ...
