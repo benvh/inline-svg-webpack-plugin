@@ -1,0 +1,16 @@
+{
+  "name": "inline-svg-webpack-plugin",
+  "version": "1.0.0",
+  "description": "a webpack svg image inliner",
+  "main": "index.js",
+  "scripts": {
+  },
+
+  "author": "benvh",
+  "license": "GPL-3.0",
+
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "last-call-webpack-plugin": "^2.1.1"
+  }
+}
