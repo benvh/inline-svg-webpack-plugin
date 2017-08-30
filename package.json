@@ -1,16 +1,23 @@
 {
-  "name": "inline-svg-webpack-plugin",
-  "version": "1.0.0",
-  "description": "a webpack svg image inliner",
-  "main": "index.js",
-  "scripts": {
-  },
+    "name": "inline-svg-webpack-plugin",
+    "version": "1.0.0",
+    "description": "a webpack svg image inliner",
+    "author": "benvh",
+    "license": "GPL-3.0",
 
-  "author": "benvh",
-  "license": "GPL-3.0",
+    "homepage": "https://github.com/benvh/inline-svg-webpack-plugin",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/benvh/inline-svg-webpack-plugin"
+    },
 
-  "dependencies": {
-    "base-64": "^0.1.0",
-    "last-call-webpack-plugin": "^2.1.1"
-  }
+    "main": "index.js",
+
+    "scripts": {
+    },
+
+    "dependencies": {
+        "base-64": "^0.1.0",
+        "last-call-webpack-plugin": "^2.1.1"
+    }
 }
